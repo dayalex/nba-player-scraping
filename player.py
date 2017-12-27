@@ -1,3 +1,5 @@
+#Player object
+#Holds players name and game statistics
 class player(object):
 	stats = []
 	statNames = ["gp", "gs", "min", "ppg", "offr", "defr", "rpg", "apg", "spg", "bpg", "tpg", "fpg", "ato", "per"]
@@ -17,10 +19,11 @@ class player(object):
 	ato = 0
 	per = 0
 	
+	#constructor sets the name of the player
 	def __init__(self, name):
 		self.name = name
-	# def gp(self, gp):
-	# 	self.gp = gp
+
+	#sets each statistic the player has with its respecive value
 	def setStats(self, gp, gs, min, ppg, offr, defr, rpg, apg, spg, bpg, tpg, fpg, ato, per):
 		self.gp = gp
 		self.gs = gs
